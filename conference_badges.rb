@@ -23,12 +23,12 @@ def assign_rooms(speakers_array)
 end
 
 
-def printer(method1, method2)
-    method1.each do |data|
-        puts "#{data}"
+def printer(attendees)
+    batch_badge_creator(attendees).each do |item|
+        puts item
     end
-    method2.each do |data2|
-        puts "#{data2}"
+    assign_rooms(attendees).each do |item|
+        puts item
     end
 end
 
